@@ -1,3 +1,3 @@
-# My Game is Cool!
+# Cool Game
 
-Make sure you give it a good description here...
+Hello
