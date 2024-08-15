@@ -1,3 +1,3 @@
 # Cool Game
 
-Hello
+Hello!
