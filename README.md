@@ -1,4 +1,4 @@
-# Cool Game
+# Cool Game!
 
 ## This uses two hashtags
 
