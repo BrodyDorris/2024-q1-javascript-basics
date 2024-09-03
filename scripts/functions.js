@@ -56,3 +56,4 @@ person.isTotalyAwesome = true;
 console.log(person);
 WearBarneyShirt(person);
 console.log(person);
+
