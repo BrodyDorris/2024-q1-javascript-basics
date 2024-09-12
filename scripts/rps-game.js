@@ -7,7 +7,7 @@ let playerControlls = document.getElementById("player-controlls");
 //@ts-ignore we know game results header is not null
 let gameResultsHeader = document.getElementById("game-results");
 
-gameResultsHeader.innerText = "Hey there!!";
+gameResultsHeader.innerText = "Play Rock Paper Scissors";
 
 let isGameOver = false;
 
