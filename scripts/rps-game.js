@@ -1,11 +1,17 @@
 //@ts-check
 
+/** @type {HTMLElement} */
+//@ts-ignore we know player controlls header is not null
 let playerControlls = document.getElementById("player-controlls");
 
 //game-results
 /** @type {HTMLElement} */
 //@ts-ignore we know game results header is not null
 let gameResultsHeader = document.getElementById("game-results");
+
+/** @type {HTMLElement} */
+//@ts-ignore we know game restart section header is not null
+let gamerestart = document.getElementById("game-restart");
 
 gameResultsHeader.innerText = "Play Rock Paper Scissors";
 
@@ -37,6 +43,7 @@ function determineOutcome(playerWeapon, computerWeapon) {
 	}
 
 	isGameOver = true;
+	showRestart();
 
 	if (playerWeapon.beats === computerWeapon.type) {
 		return `Player wins! ${playerWeapon.type} beats ${computerWeapon.type}`;
@@ -67,4 +74,24 @@ function playerControllHandler(e) {
 	console.log(result);
 }
 
+function gameRestartHandler(e) {
+	if (e.target.id === "btn-restart") {
+		isGameOver = false;
+		showPlayerControlls();
+		gameResultsHeader.innerText = "";
+	}
+}
+
+function showRestart() {
+	gamerestart.style.display = "initial";
+	playerControlls.style.display = "none";
+}
+
+function showPlayerControlls() {
+	gamerestart.style.display = "none";
+	playerControlls.style.display = "initial";
+}
+
 playerControlls?.addEventListener("click", playerControllHandler);
+
+gamerestart?.addEventListener("click", gameRestartHandler);
