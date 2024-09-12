@@ -55,6 +55,7 @@ function playerControllHandler(e) {
 
 	if (!playerWeapon) {
 		console.log("Player wins! Choose your weapon Beats everything!");
+		gameResultsHeader.innerText = "Player wins! Choose your weapon Beats everything!";
 		return;
 	}
 
