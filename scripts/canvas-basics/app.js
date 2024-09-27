@@ -1,5 +1,6 @@
 //@ts-check
 import { SquareShape } from "./shapes/square.js";
+import { Circleshape } from "./shapes/chalenge-friday.js";
 /** @type {HTMLCanvasElement} */
 //@ts-ignore canvas is an HTMLCanvasElement
 const canvas = document.getElementById("game-canvas");
@@ -15,6 +16,7 @@ let shapes = [];
 
 for (let i = 0;i < 10000; i++) {
     shapes.push(new SquareShape(0,0,ctx,canvas));
+    shapes.push(new Circleshape(0,0,ctx,canvas));
 }
 
 
