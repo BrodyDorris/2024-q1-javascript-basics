@@ -1,8 +1,8 @@
 //@ts-check
 export class SquareShape {
     constructor(x, y, ctx, canvas) {
-        this.x = x+100;
-        this.y = y+100;
+        this.x = x;
+        this.y = y;
         this.ctx = ctx;
         this.canvas = canvas;
 
